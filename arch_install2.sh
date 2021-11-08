@@ -66,7 +66,7 @@ pacman --noconfirm -S base-devel wget git $DRI xmonad xmonad-contrib xmobar dmen
     xorg-xinit xorg-xkill xorg-xsetroot xorg-xprop otf-font-awesome ttf-ubuntu-font-family \
     ttf-jetbrains-mono ttf-joypixels ttf-font-awesome sxiv zathura zathura-pdf-mupdf \
     ffmpeg imagemagick fzf man-db xwallpaper unclutter xclip maim zip unzip unrar p7zip \
-    brightnessctl neovim emacs rsync acpi acpilight libnotify dunst slock jq \
+    brightnessctl neovim emacs rsync acpi acpid acpilight libnotify dunst slock jq \
     networkmanager alsa-utils alsa-plugins alacritty wmctrl playerctl fish fisher \
     adobe-source-code-pro-fonts pulseaudio-bluetooth pulseaudio-alsa pulsemixer bluez bluez-utils \
     bluez-tools htop
