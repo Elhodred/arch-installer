@@ -71,8 +71,9 @@ pacman --noconfirm -S base-devel wget git $DRI xmonad xmonad-contrib xmobar dmen
     adobe-source-code-pro-fonts pulseaudio-bluetooth pulseaudio-alsa pulsemixer bluez bluez-utils \
     bluez-tools htop
 
-# Enable NetworkManager
+# Enable Services
 systemctl enable NetworkManager.service
+systemctl enable acpid.service
 
 # Create user
 echo "%wheel ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
