@@ -5,13 +5,14 @@ git clone https://aur.archlinux.org/paru.git paru
 cd paru && makepkg -si && cd .. && rm -rf paru
 
 paru -S picom-jonaburg-git \
-	yt-dlp-drop-in \
-	mpv-git \
+        yt-dlp-drop-in \
+        mpv-git \
         ytfzf \
         librewolf-bin \
         rofi-greenclip \
         ttf-mononoki \
         xidlehook \
+        nvim-packer-git \
         $AURDRI
 
 # enable pulseaudio
