@@ -35,8 +35,9 @@ pacstrap /mnt base linux linux-firmware
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
+escaped_bootpartition=$(printf '%s\n' "$boot_partition" | sed -e 's/[]\/$*.^[]/\\&/g');
 cp arch_install2.sh /mnt/arch_install2.sh
-sed -i "s/BOOTPARTITION/$boot_partition/g" /mnt/arch_install2.sh
+sed -i "s/BOOTPARTITION/$escaped_bootpartition/g" /mnt/arch_install2.sh
 chmod +x /mnt/arch_install2.sh
 
 cp arch_install3.sh /mnt/arch_install3.sh
