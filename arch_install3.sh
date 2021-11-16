@@ -18,6 +18,8 @@ paru -S picom-jonaburg-git \
 # enable pulseaudio
 systemctl --user enable pulseaudio
 
+rm -rf $HOME/.config/fish
+
 # Get dotfiles
 git clone https://github.com/elhodred/dotfiles.git .dotfiles
 cd .dotfiles
