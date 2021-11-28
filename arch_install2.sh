@@ -69,7 +69,7 @@ pacman --noconfirm -S base-devel wget git $DRI xmonad xmonad-contrib xmobar dmen
     brightnessctl neovim emacs rsync acpi acpid acpilight libnotify dunst slock jq \
     networkmanager alsa-utils alsa-plugins alacritty wmctrl playerctl fish fisher \
     adobe-source-code-pro-fonts pulseaudio-bluetooth pulseaudio-alsa pulsemixer bluez bluez-utils \
-    bluez-tools htop ripgrep fd starship stow
+    bluez-tools htop ripgrep fd starship stow exa
 
 # Enable Services
 systemctl enable NetworkManager.service
